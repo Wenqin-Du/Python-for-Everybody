@@ -95,3 +95,12 @@ print(bigWord, bigCount)
 for k, v in counts.items():
     if v == bigCount:
         print(k, v)
+
+# count the number of characters in a string
+a = 'aabbbcdd'
+counts = dict()
+for i in range(len(a)):
+    counts[a[i]] = counts.get(a[i], 0) + 1
+print(counts)
+for key in counts:
+    print(key, counts[key])
